@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Interaction</title>
+    <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+<div id="map-container">
+    <img src="./Images/imageppt-input3.png" alt="Map" usemap="#map-areas" id="map-image"> <!-- Replace with your actual map image -->
+    <map name="map-areas">
+        <!-- Approximate coordinates for a button at the bottom of the map -->
+        <area shape="rect" coords="330,1255,430,1295" alt="Share Location" href="#" id="share-location">
+    </map>
+    <button id="share-location-btn">Share your location.</button>
+</div>
+
+<div id="share-dialog" class="hidden">
+    <a href="#" class="share-option">WhatsApp</a>
+    <a href="#" class="share-option">Gmail</a>
+    <a href="#" class="share-option">Twitter</a>
+    <a href="#" class="share-option">Skype</a>
+    <a href="#" class="share-option">More...</a>
+</div>
+<div id="navigation-buttons">
+    <button id="prev-button">Previous Page</button>
+    <button id="next-button">Next Page</button>
+  </div>
+<script src="script3.js"></script>
+</body>
+</html>

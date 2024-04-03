@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map Interaction with Dialog</title>
+    <link rel="stylesheet" href="styles4.css">
+</head>
+<body>
+
+<div id="map-container">
+    <img src="./Images/imageppt-input4.png" alt="Map" usemap="#map-info-areas" id="map-image"> <!-- Replace with your actual map image -->
+    
+    <map name="map-info-areas">
+        <!-- The coords for the buttons on the map based on the image's size -->
+        <area shape="rect" coords="760,1555,752,1555" href="#" alt="Pickup Info" id="pickup-info-area">
+        <area shape="rect" coords="760,1555,752,1555" href="#" alt="Delay Info" id="delay-info-area">
+    </map>
+
+    <button id="pickup-info-btn"  class="button1" onclick="showInfo('pickup-info')">Pick up Info.</button>
+    <button id="delay-info-btn" class="button2" onclick="showInfo('delay-info')">Delay Info.</button>
+</div>
+
+<div id="info-dialog" class="hidden">
+    <div id="pickup-info" class="info-content hidden">
+        <!-- Content for pick up info -->
+        <p>Like how many shuttles are available for the day. Live locations of the cars.</p>
+    </div>
+    <div id="delay-info" class="info-content hidden">
+        <!-- Content for delay info -->
+        <p>Here we can display how many people are waiting before me and how many shuttles are carrying passengers </p>
+
+    </div>
+</div>
+<div id="navigation-buttons">
+    <button id="prev-button">Previous Page</button>
+    <button id="next-button">Next Page</button>
+  </div>
+<script src="script4.js"></script>
+</body>
+</html>
+

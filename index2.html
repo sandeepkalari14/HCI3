@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Map Dropdown</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+
+<div id="map-container">
+    <img src="./Images/imageppt-input2.png" alt="Map" usemap="#map-areas" id="map-image"> <!-- Replace with your actual map image -->
+    <map name="map-areas">
+        <area shape="rect" coords="20,20,140,60" href="#" alt="Dropoff" id="dropoff-area">
+    </map>
+    <div id="dropdown-list" class="hidden">
+        <ul>
+            <li>1070W, 48th st, 23508</li>
+            <li>1048W, 48th st, 23508</li>
+            <!-- More pickup locations here -->
+        </ul>
+        <ul>
+            <li>Village building 2</li>
+            <li>Barry Art Building</li>
+            <!-- More dropoff locations here -->
+        </ul>
+    </div>
+</div>
+<div id="navigation-buttons">
+    <button id="prev-button">Previous Page</button>
+    <button id="next-button">Next Page</button>
+  </div>
+<script src="script2.js"></script>
+</body>
+</html>
